@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ensure anchor links don't hide under fixed header */
+section {
+  scroll-margin-top: 4rem;
+}
