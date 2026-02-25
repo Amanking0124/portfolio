@@ -19,8 +19,10 @@ export default function Navbar() {
             <div className="hidden md:flex items-center space-x-1">
               <a href="#home" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Home</a>
               <a href="#about" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">About</a>
+              <a href="#experience" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Experience</a>
               <a href="#skills" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Skills</a>
               <a href="#projects" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Projects</a>
+              <a href="#certifications" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Certifications</a>
               <a href="#contact" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Contact</a>
             </div>
           </div>
@@ -59,8 +61,10 @@ export default function Navbar() {
         <div className="md:hidden bg-white dark:bg-gray-800">
           <a href="#home" className="block py-2 px-4 text-sm">Home</a>
           <a href="#about" className="block py-2 px-4 text-sm">About</a>
+          <a href="#experience" className="block py-2 px-4 text-sm">Experience</a>
           <a href="#skills" className="block py-2 px-4 text-sm">Skills</a>
           <a href="#projects" className="block py-2 px-4 text-sm">Projects</a>
+          <a href="#certifications" className="block py-2 px-4 text-sm">Certifications</a>
           <a href="#contact" className="block py-2 px-4 text-sm">Contact</a>
         </div>
       )}

@@ -2,8 +2,10 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Projects from "./Projects";
+import Experience from "./components/Experience";
 import Skills from "./components/Skills";
+import Projects from "./Projects";
+import Certifications from "./components/Certifications";
 import Contact from "./Contact";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
@@ -40,11 +42,17 @@ function App() {
         <section id="about">
           <About />
         </section>
+        <section id="experience">
+          <Experience />
+        </section>
         <section id="skills">
           <Skills />
         </section>
         <section id="projects">
           <Projects />
+        </section>
+        <section id="certifications">
+          <Certifications />
         </section>
         <section id="contact">
           <Contact />
