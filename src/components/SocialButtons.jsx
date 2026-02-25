@@ -12,7 +12,7 @@ export default function SocialButtons({ className = "" }) {
         <FaGithub size={24} />
       </a>
       <a
-        href="https://linkedin.com/in/your-profile"
+        href="https://www.linkedin.com/in/amandeep-singh-ab56ba291/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
