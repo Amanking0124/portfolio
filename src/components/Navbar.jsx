@@ -28,7 +28,7 @@ export default function Navbar() {
             <a href="https://github.com/Amanking0124" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">
               <FaGithub size={20} />
             </a>
-            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.linkedin.com/in/amandeep-singh-ab56ba291/" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">
               <FaLinkedin size={20} />
             </a>
             {/* mobile menu button */}
