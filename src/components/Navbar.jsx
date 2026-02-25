@@ -1,23 +1,28 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    // navbar only visible on small screens; sidebar handles larger
-    <nav className="fixed w-full bg-white dark:bg-gray-800 shadow-md z-50 md:hidden">
+    <nav className="fixed w-full bg-white dark:bg-gray-800 shadow-md z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between">
           <div className="flex space-x-4">
             {/* logo / name */}
             <div>
-              <Link to="/" className="flex items-center py-5 px-2 text-gray-700 dark:text-gray-200">
+              <a href="#home" className="flex items-center py-5 px-2 text-gray-700 dark:text-gray-200">
                 <span className="font-bold">Amandeep</span>
-              </Link>
+              </a>
             </div>
-
+            {/* primary nav */}
+            <div className="hidden md:flex items-center space-x-1">
+              <a href="#home" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Home</a>
+              <a href="#about" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">About</a>
+              <a href="#skills" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Skills</a>
+              <a href="#projects" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Projects</a>
+              <a href="#contact" className="py-5 px-3 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Contact</a>
+            </div>
           </div>
           {/* secondary nav */}
           <div className="flex items-center space-x-3">
@@ -52,12 +57,11 @@ export default function Navbar() {
       {/* mobile menu */}
       {open && (
         <div className="md:hidden bg-white dark:bg-gray-800">
-          <Link to="/" className="block py-2 px-4 text-sm">Home</Link>
-          <Link to="/about" className="block py-2 px-4 text-sm">About</Link>
-          <Link to="/projects" className="block py-2 px-4 text-sm">Projects</Link>
-          <Link to="/skills" className="block py-2 px-4 text-sm">Skills</Link>
-          <Link to="/contact" className="block py-2 px-4 text-sm">Contact</Link>
-          <Link to="/resume" className="block py-2 px-4 text-sm">Resume</Link>
+          <a href="#home" className="block py-2 px-4 text-sm">Home</a>
+          <a href="#about" className="block py-2 px-4 text-sm">About</a>
+          <a href="#skills" className="block py-2 px-4 text-sm">Skills</a>
+          <a href="#projects" className="block py-2 px-4 text-sm">Projects</a>
+          <a href="#contact" className="block py-2 px-4 text-sm">Contact</a>
         </div>
       )}
     </nav>

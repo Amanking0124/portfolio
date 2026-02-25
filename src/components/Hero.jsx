@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"; // hero section animation
-import { Link } from "react-router-dom";
 import profilePic from "../assets/profile.jpg";
 
 export default function Hero() {
@@ -33,12 +32,12 @@ export default function Hero() {
         >
           I'm a developer building responsive, accessible, and delightful user interfaces using modern web technologies.
         </motion.p>
-        <Link
-          to="/projects"
+        <a
+          href="#projects"
           className="mt-10 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-colors"
         >
           See My Work
-        </Link>
+        </a>
       </div>
     </section>
   );
