@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* ensure anchor links don't hide under fixed header */
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   scroll-margin-top: 4rem;
 }

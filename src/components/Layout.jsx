@@ -36,16 +36,6 @@ export default function Layout({ children }) {
                 Contact
               </Link>
             </li>
-            <li>
-              <Link to="/skills" className="text-blue-500 hover:underline">
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link to="/resume" className="text-blue-500 hover:underline">
-                Resume
-              </Link>
-            </li>
           </ul>
         </nav>
       </aside>

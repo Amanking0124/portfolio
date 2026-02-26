@@ -23,20 +23,61 @@ export default function Hero() {
 
       {/* Content */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.8 }}
+        initial="hidden"
+        animate="visible"
         className="relative z-10 max-w-2xl px-4 text-center text-white"
       >
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-4 drop-shadow-lg">
-          Amandeep Singh
+        {/* animate each letter from random offscreen position into place */}
+        {/** build variants outside render to avoid re-creating? ok here for simplicity **/}
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-4 drop-shadow-lg inline-block">
+          {"Amandeep Singh".split("").map((char, i) => (
+            <motion.span
+              key={i}
+              className="inline-block"
+              custom={i}
+              variants={{
+                hidden: (index) => ({
+                  opacity: 0,
+                  x: (Math.random() - 0.5) * 800,
+                  y: (Math.random() - 0.5) * 800,
+                  rotate: (Math.random() - 0.5) * 360,
+                  scale: 0,
+                }),
+                visible: {
+                  opacity: 1,
+                  x: 0,
+                  y: 0,
+                  rotate: 0,
+                  scale: 1,
+                  transition: {
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 20,
+                    delay: i * 0.08,
+                  },
+                },
+              }}
+            >
+              {char === " " ? "\u00A0" : char}
+            </motion.span>
+          ))}
         </h1>
-        <p className="text-xl md:text-2xl font-semibold mb-4 drop-shadow-md">
+        <motion.p
+          className="text-xl md:text-2xl font-semibold mb-4 drop-shadow-md"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+        >
           IoT Enthusiast | Full Stack Developer
-        </p>
-        <p className="text-lg md:text-xl mb-8 leading-relaxed drop-shadow-md opacity-95">
+        </motion.p>
+        <motion.p
+          className="text-lg md:text-xl mb-8 leading-relaxed drop-shadow-md opacity-95"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.4, duration: 0.8 }}
+        >
           Building innovative solutions at the intersection of web development and IoT. Passionate about creating responsive applications and smart hardware projects.
-        </p>
+        </motion.p>
         <div className="flex gap-4 justify-center">
           <motion.a
             href="#projects"

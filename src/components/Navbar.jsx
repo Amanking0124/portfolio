@@ -59,13 +59,13 @@ export default function Navbar() {
       {/* mobile menu */}
       {open && (
         <div className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-          <a href="#home" className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Home</a>
-          <a href="#about" className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">About</a>
-          <a href="#experience" className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Experience</a>
-          <a href="#skills" className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Skills</a>
-          <a href="#projects" className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Projects</a>
-          <a href="#certifications" className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Certifications</a>
-          <a href="#contact" className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Contact</a>
+          <a href="#home" onClick={() => setOpen(false)} className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Home</a>
+          <a href="#about" onClick={() => setOpen(false)} className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">About</a>
+          <a href="#experience" onClick={() => setOpen(false)} className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Experience</a>
+          <a href="#skills" onClick={() => setOpen(false)} className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Skills</a>
+          <a href="#projects" onClick={() => setOpen(false)} className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Projects</a>
+          <a href="#certifications" onClick={() => setOpen(false)} className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Certifications</a>
+          <a href="#contact" onClick={() => setOpen(false)} className="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700">Contact</a>
         </div>
       )}
     </nav>
