@@ -37,7 +37,7 @@ export default function About() {
               </li>
               <li className="flex items-start">
                 <span className="text-blue-200 mr-3 mt-1 text-xl">→</span>
-                <span><strong>Experience:</strong> 2+ Years in Web & IoT Development</span>
+                <span><strong>Experience:</strong> 1 Year in Web & IoT Development</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-200 mr-3 mt-1 text-xl">→</span>
